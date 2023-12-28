@@ -9,6 +9,7 @@ install-script: |
       exit 0
     else
       echo "Found an existing Pylon installation in PYLON_ROOT but the version is too low"
+      echo "$MAJOR"
       exit 1
     fi
   fi
